@@ -6,7 +6,7 @@ function textInput (event) {
     input.textContent = event.currentTarget.value;  
 }
 
-input.addEventListener("change", validInput);
+input.addEventListener("blur", validInput);
 
 function validInput () {
   if (input.textContent.length === Number(input.dataset.length)) {
